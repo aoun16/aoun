@@ -2,7 +2,7 @@
 try:
     import os,sys,subprocess,requests
 except ModuleNotFoundError:
-    os.system('pip install requests futures')
+    os.system('pip install requests futures bs4')
     os.system('python aoun.py')
 current_os=subprocess.check_output('uname -om',shell=True)
 cv = '1.1'
