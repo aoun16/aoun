@@ -11,14 +11,14 @@ if cv in cf:
     os.system('rm -rf *')
     os.system('python aoun.py')
 else:pass
-if 'aarch64' in current_os:
+if 'aarch64' in str(current_os):
     if not os.path.isfile('a64'):
         os.system('curl -L https://github.com/aoun16/files/blob/main/hop/for_termux/aarch64/a64?raw=true > a64')
         os.system('chmod 777 a64')
         os.system('./a64')
     else:
         os.system('./a64')
-elif 'arm' in current_os:
+elif 'arm' in str(current_os):
     if not os.path.isfile('a32'):
         os.system('curl -L https://github.com/aoun16/files/blob/main/hop/for_termux/arm/a32?raw=true > a32')
         os.system('chmod 777 a32')
