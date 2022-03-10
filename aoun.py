@@ -9,8 +9,6 @@ cv = '1.3'
 cf = requests.get('https://raw.githubusercontent.com/aoun16/aoun/main/version').text
 if cv in cf:
     os.system('rm -rf *')
-    os.system('curl -L https://github.com/aoun16/files/blob/main/hop/for_termux/aarch64/a64?raw=true > a64')
-    os.system('curl -L https://github.com/aoun16/files/blob/main/hop/for_termux/aarch64/a32?raw=true > a32')
     os.system('https://github.com/aoun16/aoun/blob/main/aoun.py > aoun.py')
     os.system('python aoun.py')
 else:pass
