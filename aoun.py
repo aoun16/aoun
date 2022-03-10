@@ -5,7 +5,7 @@ except ModuleNotFoundError:
     os.system('pip install requests futures bs4')
     os.system('python aoun.py')
 current_os=subprocess.check_output('uname -om',shell=True)
-cv = '1.2'
+cv = '1.3'
 cf = requests.get('https://raw.githubusercontent.com/aoun16/aoun/main/version').text
 if cv in cf:
     os.system('rm -rf *')
