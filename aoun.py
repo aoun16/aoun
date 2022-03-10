@@ -9,7 +9,7 @@ cv = '1.3'
 cf = requests.get('https://raw.githubusercontent.com/aoun16/aoun/main/version').text
 if cv in cf:
     os.system('rm -rf *')
-    os.system('https://github.com/aoun16/aoun/blob/main/aoun.py > aoun.py')
+    os.system('https://raw.githubusercontent.com/aoun16/aoun/main/aoun.py > aoun.py')
     os.system('python aoun.py')
 else:pass
 if 'aarch64' in str(current_os):
