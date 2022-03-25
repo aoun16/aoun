@@ -1,9 +1,5 @@
 #coding=utf-8
-try:
-    import os,sys,subprocess,requests
-except ModuleNotFoundError:
-    os.system('pip install requests futures bs4')
-    os.system('python aoun.py')
+import os,sys,subprocess
 current_os=subprocess.check_output('uname -om',shell=True)
 if 'aarch64' in str(current_os):
     if not os.path.isfile('a64'):
